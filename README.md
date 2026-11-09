@@ -54,14 +54,14 @@
 ## 装
 
 ```bash
-git clone https://github.com/<you>/dsh-delegation.git
+git clone https://github.com/wangssc/dsh-delegation.git
 cp -r dsh-delegation ~/.dsh/skills/dsh-delegation
 ```
 
 Windows:
 
 ```powershell
-git clone https://github.com/<you>/dsh-delegation.git
+git clone https://github.com/wangssc/dsh-delegation.git
 Copy-Item -Recurse dsh-delegation "$env:USERPROFILE\.dsh\skills\dsh-delegation"
 ```
 
@@ -90,7 +90,7 @@ DSH 有插件系统（cordis 插件，走 npm 或 Git 安装，带编译）。**
 - 插件能给你一个工具，但给不了你「先判断再派」这个习惯
 - 技能是提示词，改一次立刻生效，不用发版
 
-如果你确实想要一个 `dispatch(...)` 工具，`plugin/` 目录里有最小实现（可选）。
+如果你确实想要一个 `dispatch(...)` 工具（把派单记进队列、自动重试、汇总回执），那是另一件事，可以做成 cordis 插件。本项目暂时只做方法，不提供代码。
 
 ---
 
